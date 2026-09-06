@@ -1,0 +1,2234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>D.B.S DELHI ITI | Industrial Training Institute</title>
+
+<meta name="description"
+content="D.B.S DELHI ITI - Quality technical education, practical training and career opportunities.">
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    line-height:1.6;
+    color:#1e293b;
+    background:#fff;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.topbar{
+    background:#061b35;
+    color:#fff;
+    padding:8px 0;
+    font-size:14px;
+}
+
+.topbar-content{
+    display:flex;
+    justify-content:space-between;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 15px rgba(0,0,0,.10);
+}
+
+.nav{
+    min-height:75px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo-icon{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    overflow:hidden;
+    background:#0b4ea2;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+    font-weight:bold;
+}
+.logo-icon img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.logo-text strong{
+    display:block;
+    color:#0b4ea2;
+    font-size:20px;
+}
+
+.logo-text span{
+    font-size:12px;
+    color:#64748b;
+}
+
+nav{
+    display:flex;
+    gap:3px;
+}
+
+nav a{
+    padding:10px 11px;
+    font-size:14px;
+    font-weight:bold;
+    border-radius:5px;
+}
+
+nav a:hover,
+nav a.active{
+    background:#0b4ea2;
+    color:#fff;
+}
+
+.menu{
+    display:none;
+    border:0;
+    background:#0b4ea2;
+    color:#fff;
+    font-size:25px;
+    padding:7px 12px;
+    cursor:pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:650px;
+
+    background:
+    linear-gradient(
+        rgba(3,28,58,.75),
+        rgba(3,28,58,.75)
+    ),
+    url("/image/DSC_0234\ \(2\).JPG");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    color:#fff;
+}
+
+.hero-content{
+    max-width:780px;
+}
+
+.hero-label{
+    color:#fbbf24;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+.hero h1{
+    font-size:clamp(42px,7vw,78px);
+    line-height:1.1;
+    margin:15px 0;
+}
+
+.hero p{
+    font-size:21px;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 25px;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
+    border:none;
+}
+
+.btn-primary{
+    background:#0b4ea2;
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:#073a7b;
+}
+
+.btn-yellow{
+    background:#f59e0b;
+    color:#111827;
+}
+
+.btn-outline{
+    border:2px solid #fff;
+    color:#fff;
+}
+
+.btn-outline:hover{
+    background:#fff;
+    color:#0b4ea2;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+    scroll-margin-top:80px;
+}
+
+.section{
+    padding:80px 0;
+}
+
+.light{
+    background:#f5f8fc;
+}
+
+.section-title{
+    text-align:center;
+    max-width:750px;
+    margin:0 auto 45px;
+}
+
+.section-title span{
+    color:#f59e0b;
+    font-weight:bold;
+    letter-spacing:2px;
+    font-size:14px;
+}
+
+.section-title h2{
+    color:#0b2748;
+    font-size:38px;
+    margin:8px 0;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.two-column{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.about-img{
+    min-height:380px;
+
+    background:
+    url("/image/dbs\ 2.JPG")
+    center/cover;
+
+    border-radius:12px;
+}
+
+.about-content h2{
+    font-size:38px;
+    color:#0b2748;
+    margin:10px 0 20px;
+}
+
+.about-content p{
+    margin-bottom:15px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 25px rgba(15,39,71,.10);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-7px);
+}
+
+.card-img{
+    height:210px;
+    background-size:cover;
+    background-position:center;
+}
+
+.electrician{
+    background-image:
+    url("/image/electrician.webp");
+}
+
+.fitter{
+    background-image:
+    url("/image/fitter.jpg");
+}
+
+.workshop{
+    background-image:
+    url("/image/skill.jpg");
+}
+
+.card-body{
+    padding:25px;
+}
+
+.card-body h3{
+    color:#0b4ea2;
+    margin-bottom:10px;
+}
+
+.card-body ul{
+    padding-left:20px;
+    margin-top:15px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.feature{
+    background:#fff;
+    text-align:center;
+    padding:30px 20px;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+}
+
+.icon{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.feature h3{
+    color:#0b4ea2;
+    margin-bottom:8px;
+}
+
+
+/* =========================
+   PAGE TITLES
+========================= */
+
+.page-title{
+    background:
+    linear-gradient(
+        rgba(5,36,70,.88),
+        rgba(5,36,70,.88)
+    ),
+    url("/image/DSC_0244.JPG")
+    center/cover;
+
+    color:#fff;
+    padding:90px 0;
+    text-align:center;
+}
+
+.page-title h2{
+    font-size:48px;
+}
+
+.page-title p{
+    color:#dbeafe;
+}
+
+
+/* =========================
+   ADMISSION
+========================= */
+
+.steps{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.step{
+    background:#f5f8fc;
+    padding:30px;
+    border-radius:10px;
+}
+
+.step-number{
+    font-size:40px;
+    color:#0b4ea2;
+    font-weight:bold;
+}
+
+
+/* =========================
+   FACULTY
+========================= */
+
+.faculty{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.faculty-card{
+    background:#fff;
+    text-align:center;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.faculty-photo{
+    height:220px;
+    background:#e8f1ff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:80px;
+}
+
+.faculty-card h3{
+    color:#0b4ea2;
+    margin:18px 0 4px;
+}
+
+.faculty-card p{
+    padding-bottom:20px;
+}
+
+
+/* =========================
+   INFRASTRUCTURE
+========================= */
+
+.infrastructure{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.infra{
+    padding:30px;
+    background:#fff;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.infra-icon{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+
+/* =========================
+   PLACEMENT
+========================= */
+
+.stats{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    background:#0b4ea2;
+    color:#fff;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.stat{
+    text-align:center;
+    padding:30px;
+    border-right:1px solid rgba(255,255,255,.2);
+}
+
+.stat strong{
+    display:block;
+    font-size:40px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:.8fr 1.2fr;
+    gap:50px;
+}
+
+.contact-info h2{
+    font-size:38px;
+    color:#0b2748;
+    margin:10px 0 15px;
+}
+
+.contact-item{
+    margin:25px 0;
+}
+
+.contact-item strong{
+    color:#0b4ea2;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-box{
+    background:#f5f8fc;
+    padding:35px;
+    border-radius:10px;
+}
+
+.form-box h2{
+    color:#0b2748;
+    margin-bottom:5px;
+}
+
+.form-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:18px;
+}
+
+.form-group{
+    margin-top:18px;
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:6px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #cbd5e1;
+    border-radius:5px;
+    font-family:inherit;
+    font-size:15px;
+    outline:none;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#0b4ea2;
+}
+
+textarea{
+    resize:vertical;
+}
+
+.submit{
+    width:100%;
+    margin-top:20px;
+}
+
+#message{
+    margin-top:15px;
+    font-weight:bold;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+    background:#0b4ea2;
+    color:#fff;
+    text-align:center;
+    padding:70px 0;
+}
+
+.cta h2{
+    font-size:42px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#061b35;
+    color:#cbd5e1;
+}
+
+.footer{
+    padding:60px 0;
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr 1.2fr;
+    gap:30px;
+}
+
+footer h3{
+    color:#fff;
+    margin-bottom:15px;
+}
+
+footer a{
+    display:block;
+    margin:7px 0;
+}
+
+.copyright{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid rgba(255,255,255,.1);
+}
+
+
+/* =========================
+   WHATSAPP
+========================= */
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25d366;
+    color:#fff;
+    padding:13px 20px;
+    border-radius:50px;
+    font-weight:bold;
+    z-index:2000;
+}
+
+
+/* =========================
+   LOCATION / MAP
+========================= */
+.location-section{
+    margin-top:45px;
+}
+.map-box{
+    width:100%;
+    min-height:380px;
+    border:0;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 25px rgba(15,39,71,.10);
+    background:#eaf3ff;
+}
+.map-box iframe{
+    width:100%;
+    height:380px;
+    border:0;
+    display:block;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+    nav a{
+        font-size:12px;
+        padding:8px;
+    }
+
+    .features,
+    .faculty,
+    .infrastructure{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .steps{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .topbar{
+        display:none;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    nav{
+        display:none;
+        position:absolute;
+        top:75px;
+        left:0;
+        right:0;
+        background:#fff;
+        flex-direction:column;
+        padding:15px;
+        box-shadow:0 8px 20px rgba(0,0,0,.12);
+    }
+
+    nav.show{
+        display:flex;
+    }
+
+    nav a{
+        padding:13px;
+    }
+
+    .hero{
+        min-height:550px;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .two-column,
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cards,
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .form-row{
+        grid-template-columns:1fr;
+    }
+
+}
+
+
+@media(max-width:500px){
+
+    .section{
+        padding:55px 0;
+    }
+
+    .features,
+    .faculty,
+    .infrastructure,
+    .steps,
+    .stats,
+    .footer{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .page-title h2{
+        font-size:35px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+}
+
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "D.B.S DELHI ITI",
+  "description": "Industrial Training Institute providing practical technical education and skill development.",
+  "url": "https://dbsdelhiiti.com/",
+  "email": "dbsdelhiiti58@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ghaziabad",
+    "addressRegion": "Uttar Pradesh",
+       "postalCode": "201103",
+       "addressCountry": "IN"
+  }
+}
+</script>
+<meta name="theme-color" content="#0b4ea2">
+<meta name="robots" content="index, follow">
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     TOP BAR
+========================= -->
+
+<div class="topbar">
+
+<div class="container topbar-content">
+
+<span>📞 9540448844</span>
+
+<span>✉ dbsdelhiiti58@gmail.com</span>
+
+</div>
+
+</div>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<div class="container nav">
+
+<a href="#home" class="logo">
+
+<div class="logo-icon">
+    <img src="/image/logo.jpg" alt="D.B.S Delhi ITI Logo" width="55" height="55">
+</div>
+
+<div class="logo-text">
+
+<strong>D.B.S DELHI ITI</strong>
+
+<span>Industrial Training Institute</span>
+
+</div>
+
+</a>
+
+
+<button class="menu"
+onclick="toggleMenu()">
+☰
+</button>
+
+
+<nav id="nav">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#courses">Courses</a>
+<a href="#admission">Admission</a>
+<a href="#faculty">Faculty</a>
+<a href="#infrastructure">Infrastructure</a>
+<a href="#gallery">Gallery</a>
+<a href="#placement">Placement</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     1. HOME
+========================= -->
+
+<section id="home" class="hero">
+
+<div class="container hero-content">
+
+<span class="hero-label">
+WELCOME TO
+</span>
+
+<h1>D.B.S DELHI ITI</h1>
+
+<p>
+Established on 2011, D.B.S. Delhi Private ITI, Tronica City, Loni, Gaziabad - Gaziabad is a recognized Private ITI Industrial Training Institute situated in Ghaziabad, Uttar Pradesh. At D.B.S. Delhi Private ITI, Tronica City, Loni, Gaziabad - Gaziabad is dedicated to providing quality vocational education and skill development training in the ITI trade, helping students build a strong foundation for a successful career in the technical field.
+</p>
+
+<div class="buttons">
+
+<a href="#admission"
+class="btn btn-primary">
+Apply For Admission
+</a>
+
+<a href="#contact"
+class="btn btn-outline">
+Enquiry Now
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="section">
+
+<div class="container two-column">
+
+<div class="about-content">
+
+<span class="hero-label">
+ABOUT OUR INSTITUTE
+</span>
+
+<h2>
+Welcome to D.B.S DELHI ITI
+</h2>
+
+<p>
+D.B.S DELHI ITI is committed to providing
+quality Industrial Training and skill-based
+technical education to students.
+</p>
+<p>
+Our focus is on practical training,
+technical knowledge, discipline and
+career development.
+</p>
+<p>
+    At D.B.S. Delhi Private ITI, Tronica City, Loni, Gaziabad - Gaziabad, we aim to bridge the gap between academic learning and industry requirements by imparting hands-on training, modern technical knowledge, and practical skills. Our mission is to nurture skilled professionals who can contribute effectively to the workforce and enhance the industrial growth of the nation.
+</p>
+
+<a href="#courses"
+class="btn btn-primary">
+Explore Courses
+</a>
+
+</div>
+
+
+<div class="about-img"></div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     COURSES
+========================= -->
+
+<section id="courses" class="section light">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>OUR COURSES</span>
+
+<h2>ITI Trades</h2>
+
+<p>
+Develop practical skills for a successful
+technical career.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<div class="card-img electrician"></div>
+
+<div class="card-body">
+
+<h3>⚡ Electrician</h3>
+
+<p>
+Learn electrical installation,
+wiring, maintenance, machines
+and safety practices.
+</p>
+
+<ul>
+<li>Practical Training</li>
+<li>Electrical Wiring</li>
+<li>Maintenance</li>
+<li>Workshop Practice</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-img fitter"></div>
+
+<div class="card-body">
+
+<h3>🔧 Fitter</h3>
+
+<p>
+Develop fitting, workshop,
+machine and industrial
+maintenance skills.
+</p>
+
+<ul>
+<li>Workshop Training</li>
+<li>Tools & Equipment</li>
+<li>Machine Practice</li>
+<li>Industrial Skills</li>
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-img workshop"></div>
+
+<div class="card-body">
+
+<h3>⚙️ Skill Development</h3>
+
+<p>
+Practical and technical
+skill development programs
+for students.
+</p>
+
+<ul>
+<li>Practical Learning</li>
+<li>Technical Skills</li>
+<li>Career Development</li>
+<li>Industry Awareness</li>
+</ul>
+
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>WHY CHOOSE US</span>
+
+<h2>Why D.B.S DELHI ITI?</h2>
+
+</div>
+
+
+<div class="features">
+
+
+<div class="feature">
+
+<div class="icon">🎓</div>
+
+<h3>Quality Education</h3>
+
+<p>
+Focused technical and skill-based education.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="icon">🔧</div>
+
+<h3>Practical Training</h3>
+
+<p>
+Hands-on workshop and practical learning.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="icon">👨‍🏫</div>
+
+<h3>Expert Faculty</h3>
+
+<p>
+Guidance from qualified professionals.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="icon">💼</div>
+
+<h3>Career Support</h3>
+
+<p>
+Placement assistance and career guidance.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     ADMISSION
+========================= -->
+
+<section id="admission">
+
+<div class="page-title">
+
+<div class="container">
+
+<h2>Admission</h2>
+
+<p>
+Start your technical career today
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>ADMISSION PROCESS</span>
+
+<h2>How To Apply</h2>
+
+</div>
+
+
+<div class="steps">
+
+
+<div class="step">
+
+<div class="step-number">01</div>
+
+<h3>Choose Trade</h3>
+
+<p>
+Select your preferred ITI trade.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">02</div>
+
+<h3>Submit Enquiry</h3>
+
+<p>
+Fill out the enquiry form.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">03</div>
+
+<h3>Documents</h3>
+
+<p>
+Submit required documents.
+</p>
+
+</div>
+
+
+<div class="step">
+
+<div class="step-number">04</div>
+
+<h3>Admission</h3>
+
+<p>
+Complete the admission process.
+</p>
+
+</div>
+
+
+</div>
+
+
+<div style="
+margin-top:50px;
+background:#eaf3ff;
+padding:40px;
+border-radius:10px;
+text-align:center;
+">
+
+<h2>
+Admissions Open
+</h2>
+
+<p>
+Contact us for admission information.
+</p>
+
+<br>
+
+<a href="#contact"
+class="btn btn-primary">
+Enquiry Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FACULTY
+========================= -->
+
+<section id="faculty" class="section light">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>OUR TEAM</span>
+
+<h2>Faculty & Staff</h2>
+
+<p>
+Dedicated professionals supporting student development.
+</p>
+
+</div>
+
+
+<div class="faculty">
+
+
+<div class="faculty-card">
+
+<div class="faculty-photo">
+👨‍🏫
+</div>
+
+<h3>Principal / Head</h3>
+
+<p>D.B.S DELHI ITI</p>
+
+</div>
+
+
+<div class="faculty-card">
+
+<div class="faculty-photo">
+👨‍🔧
+</div>
+
+<h3>Electrician Instructor</h3>
+
+<p>Technical Department</p>
+
+</div>
+
+
+<div class="faculty-card">
+
+<div class="faculty-photo">
+👨‍🔧
+</div>
+
+<h3>Fitter Instructor</h3>
+
+<p>Technical Department</p>
+
+</div>
+
+
+<div class="faculty-card">
+
+<div class="faculty-photo">
+👩‍💼
+</div>
+
+<h3>Office Staff</h3>
+
+<p>Administration</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     INFRASTRUCTURE
+========================= -->
+
+<section id="infrastructure" class="section">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>OUR FACILITIES</span>
+
+<h2>Infrastructure</h2>
+
+</div>
+
+
+<div class="infrastructure">
+
+
+<div class="infra">
+
+<div class="infra-icon">🏫</div>
+
+<h3>Classrooms</h3>
+
+<p>
+Comfortable learning environment.
+</p>
+
+</div>
+
+
+<div class="infra">
+
+<div class="infra-icon">🔧</div>
+
+<h3>Workshops</h3>
+
+<p>
+Practical technical training facilities.
+</p>
+
+</div>
+
+
+<div class="infra">
+
+<div class="infra-icon">💻</div>
+
+<h3>Computer Lab</h3>
+
+<p>
+Digital learning and computer facilities.
+</p>
+
+</div>
+
+
+<div class="infra">
+
+<div class="infra-icon">📚</div>
+
+<h3>Library</h3>
+
+<p>
+Educational and technical resources.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section id="gallery" class="section light">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>PHOTO GALLERY</span>
+
+<h2>Our Gallery</h2>
+
+<p>
+Campus, workshops and institute activities.
+</p>
+
+</div>
+
+
+<div class="gallery">
+    <img src="/image/DSC_0234 (2).JPG" alt="D.B.S Delhi ITI Campus" loading="lazy" width="900" height="600">
+    <img src="/image/DSC_0242.JPG" alt="D.B.S Delhi ITI Institute Building" loading="lazy" width="900" height="600">
+    <img src="/image/DSC_0252.JPG" alt="Electrician Workshop at D.B.S Delhi ITI" loading="lazy" width="900" height="600">
+    <img src="/image/DSC_0248.JPG" alt="Fitter Workshop at D.B.S Delhi ITI" loading="lazy" width="900" height="600">
+    <img src="/image/class.jpeg" alt="Classroom at D.B.S Delhi ITI" loading="lazy" width="900" height="600">
+    <img src="/image/unnamed.jpg" alt="Students of D.B.S Delhi ITI" loading="lazy" width="900" height="600">
+    <img src="/image/ecn.avif" alt="D.B.S Delhi ITI Campus" loading="lazy" width="900" height="600">
+    <img src="/image/stf.avif" alt="D.B.S Delhi ITI Campus" loading="lazy" width="900" height="600">
+    <img src="/image/plant.jpeg" alt="D.B.S Delhi ITI Campus" loading="lazy" width="900" height="600">
+    <img src="/image/prac.jpeg" alt="D.B.S Delhi ITI Campus" loading="lazy" width="900" height="600">
+    <img src="/image/15.jpg" alt="D.B.S Delhi ITI Campus" loading="lazy" width="900" height="600">
+    <img src="/image/tab.jpg" alt="D.B.S Delhi ITI Campus" loading="lazy" width="900" height="600">
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     PLACEMENT
+========================= -->
+
+<section id="placement">
+
+<div class="page-title">
+
+<div class="container">
+
+<h2>Placement & Achievements</h2>
+
+<p>
+Supporting students towards better career opportunities.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="container">
+
+<div class="features">
+
+
+<div class="feature">
+
+<div class="icon">💼</div>
+
+<h3>Placement Assistance</h3>
+
+<p>
+Career guidance and placement support.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="icon">🏢</div>
+
+<h3>Industry Exposure</h3>
+
+<p>
+Understanding real industrial environments.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="icon">🤝</div>
+
+<h3>Job Fair</h3>
+
+<p>
+Recruitment and career activities.
+</p>
+
+</div>
+
+
+<div class="feature">
+
+<div class="icon">🏆</div>
+
+<h3>Achievements</h3>
+
+<p>
+Recognizing student achievements.
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="stats">
+
+
+<div class="stat">
+
+<strong>500+</strong>
+
+Students Trained
+
+</div>
+
+
+<div class="stat">
+
+<strong>100+</strong>
+
+Career Opportunities
+
+</div>
+
+
+<div class="stat">
+
+<strong>10+</strong>
+
+Industry Activities
+
+</div>
+
+
+<div class="stat">
+
+<strong>100%</strong>
+
+Skill Focus
+
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT + ENQUIRY
+========================= -->
+
+<section id="contact" class="section light">
+
+<div class="container contact-grid">
+
+
+<div class="contact-info">
+
+<span class="hero-label">
+GET IN TOUCH
+</span>
+
+<h2>
+Contact D.B.S DELHI ITI
+</h2>
+
+<p>
+For admission, courses and other information,
+contact our institute.
+</p>
+
+
+<div class="contact-item">
+
+<strong>📍 Address</strong>
+
+<p>
+D.B.S DELHI ITI<br>
+Trans Delhi Signature City, Ghaziabad, Uttar Pradesh 201103
+</p>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>📞 Phone</strong>
+
+<p>
+9540448844
+</p>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>✉ Email</strong>
+
+<p>
+dbsdelhiiti58@gmail.com
+</p>
+
+</div>
+
+
+<div class="contact-item">
+
+<strong>🕐 Office Hours</strong>
+
+<p>
+Monday - Saturday<br>
+09:00 AM - 05:00 PM
+</p>
+
+</div>
+
+</div>
+
+
+<!-- ENQUIRY FORM -->
+
+<div class="form-box">
+
+<h2>Student Enquiry Form</h2>
+
+<p>
+Fill in your details and our admission team
+will contact you.
+</p>
+
+
+<form id="enquiryForm">
+
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>
+Student Name *
+</label>
+
+<input
+type="text"
+id="studentName"
+placeholder="Enter student name"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Father's Name
+</label>
+
+<input
+type="text"
+placeholder="Enter father's name">
+
+</div>
+
+</div>
+
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>
+Mobile Number *
+</label>
+
+<input
+type="tel"
+id="mobile"
+placeholder="10 digit mobile number"
+maxlength="10"
+required>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Email
+</label>
+
+<input
+type="email"
+placeholder="Enter email address">
+
+</div>
+
+</div>
+
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>
+Date of Birth
+</label>
+
+<input type="date">
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Select Trade *
+</label>
+
+<select id="trade" required>
+
+<option value="">
+Select Trade
+</option>
+
+<option>
+Electrician
+</option>
+
+<option>
+Fitter
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>
+Qualification
+</label>
+
+<select>
+
+<option>
+Select Qualification
+</option>
+
+<option>10th</option>
+<option>12th</option>
+<option>Other</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+City
+</label>
+
+<input
+type="text"
+placeholder="Enter city">
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Address
+</label>
+
+<textarea
+rows="3"
+placeholder="Enter complete address"></textarea>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Message
+</label>
+
+<textarea
+rows="4"
+placeholder="Write your enquiry"></textarea>
+
+</div>
+
+
+<button
+type="submit"
+class="btn btn-primary submit">
+
+Submit Enquiry
+
+</button>
+
+
+<div id="message"></div>
+
+
+</form>
+
+</div>
+
+
+<div class="location-section">
+    <div class="section-title">
+        <span>OUR LOCATION</span>
+        <h2>Find D.B.S DELHI ITI</h2>
+        <p>Trans Delhi Signature City, Ghaziabad, Uttar Pradesh 201103</p>
+    </div>
+    <div class="map-box">
+        <iframe
+            src="https://www.google.com/maps?q=Trans%20Delhi%20Signature%20City%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201103&output=embed"
+            title="D.B.S Delhi ITI location map"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div style="text-align:center;margin-top:18px;">
+        <a class="btn btn-primary" href="https://maps.app.goo.gl/2k6BUwYdhMyNV6589" target="_blank" rel="noopener">
+            📍 Open Location in Google Maps
+        </a>
+    </div>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+Admissions Open
+</h2>
+
+<p>
+Build your skills. Build your career.
+</p>
+
+<br>
+
+<a href="#contact"
+class="btn btn-yellow">
+Enquire Now
+</a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+<div class="container footer">
+
+
+<div>
+
+<h3>
+D.B.S DELHI ITI
+</h3>
+
+<p>
+Industrial Training Institute committed
+to technical education, practical training
+and skill development.
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Quick Links
+</h3>
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#courses">Courses</a>
+<a href="#admission">Admission</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Institute
+</h3>
+
+<a href="#faculty">Faculty</a>
+<a href="#infrastructure">Infrastructure</a>
+<a href="#gallery">Gallery</a>
+<a href="#placement">Placement</a>
+
+</div>
+
+
+<div>
+
+<h3>
+Contact
+</h3>
+
+<p>
+📍 E-10,Sudhier Enclave Trans Delhi Signature City, Ghaziabad, Uttar Pradesh 201103
+</p>
+
+<p>
+📞 8510000300,9540448844,9540400600
+</p>
+
+<p>
+✉ dbsdelhiiti@gmail.com   dbsdelhiiti58@gmail.com
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="copyright">
+
+© 2026 D.B.S DELHI ITI.
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+
+<!-- WHATSAPP -->
+
+<a
+class="whatsapp"
+href="https://wa.me/919540448844"
+target="_blank">
+
+💬 WhatsApp
+
+</a>
+
+
+<script>
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+function toggleMenu(){
+
+    document
+    .getElementById("nav")
+    .classList
+    .toggle("show");
+
+}
+
+
+/* =========================
+   CLOSE MENU
+========================= */
+
+document
+.querySelectorAll("#nav a")
+.forEach(function(link){
+
+    link.addEventListener("click",function(){
+
+        document
+        .getElementById("nav")
+        .classList
+        .remove("show");
+
+    });
+
+});
+
+
+/* =========================
+   ENQUIRY FORM
+========================= */
+
+document
+.getElementById("enquiryForm")
+.addEventListener("submit",function(e){
+
+    e.preventDefault();
+
+    const name =
+    document.getElementById("studentName").value;
+
+    const mobile =
+    document.getElementById("mobile").value;
+
+    const trade =
+    document.getElementById("trade").value;
+
+    const message =
+    document.getElementById("message");
+
+
+    if(!/^[0-9]{10}$/.test(mobile)){
+
+        message.innerHTML =
+        "❌ Please enter a valid 10-digit mobile number.";
+
+        message.style.color="red";
+
+        return;
+
+    }
+
+
+    message.innerHTML =
+    "✅ Thank you " +
+    name +
+    "! Your enquiry for " +
+    trade +
+    " has been received.";
+
+    message.style.color="green";
+
+
+    document
+    .getElementById("enquiryForm")
+    .reset();
+
+});
+
+
+/* =========================
+   ACTIVE NAVIGATION
+========================= */
+
+const sections =
+document.querySelectorAll("section[id]");
+
+const navLinks =
+document.querySelectorAll("#nav a");
+
+
+window.addEventListener("scroll",function(){
+
+    let current="";
+
+    sections.forEach(function(section){
+
+        const sectionTop =
+        section.offsetTop - 150;
+
+        if(pageYOffset >= sectionTop){
+
+            current =
+            section.getAttribute("id");
+
+        }
+
+    });
+
+
+    navLinks.forEach(function(link){
+
+        link.classList.remove("active");
+
+        if(
+            link.getAttribute("href")
+            === "#" + current
+        ){
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
